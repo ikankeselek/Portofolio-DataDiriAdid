@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aditya Nugraha | Portofolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        fontFamily: {
+          heading: ['"Bricolage Grotesque"', 'system-ui', 'sans-serif'],
+          body: ['Figtree', 'system-ui', 'sans-serif'],
+        },
+        colors: {
+          hijau: '#2f5d50', 'hijau-tua': '#1f4036', kuning: '#e8b84a',
+          krem: '#e9eee6', kartu: '#f8faf5', teks: '#1d2a25', samar: '#4d5f57',
+        },
+      } },
+    };
+  </script>
+  <!-- Media Query (CSS biasa) -->
+  <style>
+    section[id] { scroll-margin-top: 5rem; }
+    @media (max-width: 640px) {
+      section[id] { scroll-margin-top: 7rem; }
+      .foto-profil { width: 160px; height: 160px; }
+    }
+  </style>
+</head>
+
+<body class="font-body bg-krem text-teks leading-relaxed antialiased">
+
+  <nav class="sticky top-0 z-50 bg-hijau-tua/95 backdrop-blur text-krem shadow-lg">
+    <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 px-5 py-3">
+      <a href="#beranda" class="font-heading font-extrabold text-xl hover:text-kuning transition-colors">Adit<span class="text-kuning">.</span></a>
+      <ul class="flex flex-wrap justify-center gap-1 text-sm font-medium">
+        <li><a href="#tentang" class="block px-3 py-1.5 rounded-full hover:bg-white/10 hover:text-kuning transition">Tentang</a></li>
+        <li><a href="#kemampuan" class="block px-3 py-1.5 rounded-full hover:bg-white/10 hover:text-kuning transition">Kemampuan</a></li>
+        <li><a href="#proyek" class="block px-3 py-1.5 rounded-full hover:bg-white/10 hover:text-kuning transition">Proyek</a></li>
+        <li><a href="#hobi" class="block px-3 py-1.5 rounded-full hover:bg-white/10 hover:text-kuning transition">Hobi</a></li>
+        <li><a href="#kontak" class="block px-3 py-1.5 rounded-full bg-kuning text-teks hover:bg-white transition">Kontak</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header id="beranda" class="bg-gradient-to-br from-hijau to-hijau-tua text-[#f3f6ef]">
+    <div class="max-w-5xl mx-auto grid md:grid-cols-[auto_1fr] items-center gap-8 md:gap-12 px-5 py-14 md:py-20 text-center md:text-left">
+      <div class="foto-profil w-52 h-52 mx-auto md:mx-0 rounded-full border-[6px] border-kuning bg-[#cfd9cf] overflow-hidden shadow-2xl ring-8 ring-white/10">
+        <img src="Aditpaspoto.jpg" alt="Foto Aditya Nugraha" class="w-full h-full object-cover object-top">
+      </div>
+      <div>
+        <p class="text-kuning font-semibold uppercase tracking-widest text-sm">Halo, saya</p>
+        <h1 class="mt-1 font-heading font-extrabold text-4xl sm:text-5xl lg:text-6xl leading-tight">Aditya Nugraha</h1>
+        <p class="mt-3 text-lg opacity-90">Mahasiswa &middot; Pemula di C++ dan HTML</p>
+        <div class="mt-6 flex flex-wrap justify-center md:justify-start gap-3">
+          <a href="#proyek" class="rounded-full bg-kuning text-teks font-semibold px-6 py-2.5 shadow-md hover:bg-white hover:-translate-y-0.5 transition">Lihat proyek</a>
+          <a href="#kontak" class="rounded-full border-2 border-white/40 font-semibold px-6 py-2.5 hover:bg-white/10 hover:-translate-y-0.5 transition">Hubungi saya</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-5 py-12 grid gap-8">
+
+    <section id="tentang" class="bg-kartu rounded-3xl p-7 sm:p-9 shadow-sm">
+      <h2 class="font-heading text-2xl font-semibold text-hijau mb-3 flex items-center gap-3"><span class="h-6 w-1.5 rounded-full bg-kuning"></span>Tentang Saya</h2>
+      <p class="text-samar max-w-2xl">Saya Adit, mahasiswa yang suka belajar pemrograman. Saya tertarik pada C++ dan sedang belajar membuat tampilan website dengan HTML, CSS, dan Tailwind.</p>
+    </section>
+
+    <section id="kemampuan" class="bg-kartu rounded-3xl p-7 sm:p-9 shadow-sm">
+      <h2 class="font-heading text-2xl font-semibold text-hijau mb-5 flex items-center gap-3"><span class="h-6 w-1.5 rounded-full bg-kuning"></span>Kemampuan</h2>
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="rounded-2xl bg-white p-5 border border-[#d5dfd0] hover:-translate-y-1 hover:shadow-md transition">
+          <div class="flex justify-between"><h3 class="font-semibold text-hijau">C++</h3><span class="text-sm text-samar">60%</span></div>
+          <div class="mt-3 h-2.5 rounded-full bg-[#e3ebdf] overflow-hidden"><div class="h-full w-[50%] rounded-full bg-hijau"></div></div>
+        </div>
+        <div class="rounded-2xl bg-white p-5 border border-[#d5dfd0] hover:-translate-y-1 hover:shadow-md transition">
+          <div class="flex justify-between"><h3 class="font-semibold text-hijau">HTML</h3><span class="text-sm text-samar">35%</span></div>
+          <div class="mt-3 h-2.5 rounded-full bg-[#e3ebdf] overflow-hidden"><div class="h-full w-[35%] rounded-full bg-hijau"></div></div>
+        </div>
+        <div class="rounded-2xl bg-white p-5 border border-[#d5dfd0] hover:-translate-y-1 hover:shadow-md transition sm:col-span-2 lg:col-span-1">
+          <div class="flex justify-between"><h3 class="font-semibold text-hijau">CSS &amp; Tailwind</h3><span class="text-sm text-samar">25%</span></div>
+          <div class="mt-3 h-2.5 rounded-full bg-[#e3ebdf] overflow-hidden"><div class="h-full w-[25%] rounded-full bg-hijau"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyek" class="bg-kartu rounded-3xl p-7 sm:p-9 shadow-sm">
+      <h2 class="font-heading text-2xl font-semibold text-hijau mb-1 flex items-center gap-3"><span class="h-6 w-1.5 rounded-full bg-kuning"></span>Proyek</h2>
+      <p class="text-sm text-samar mb-6">Beberapa proyek yang pernah saya kerjakan.</p>
+      <div class="grid gap-5 md:grid-cols-3">
+
+        <article class="group flex flex-col rounded-2xl bg-white border border-[#d5dfd0] p-5 hover:-translate-y-1 hover:shadow-lg hover:border-kuning transition">
+          <div class="h-1.5 w-12 rounded-full bg-kuning group-hover:w-20 transition-all"></div>
+          <h3 class="mt-4 font-heading font-semibold text-lg text-hijau">MineSweeper Sederhana</h3>
+          <p class="mt-2 text-sm text-samar flex-1">MineSweeper berbasis C++ yang berjalan di Terminal</p>
+          <ul class="mt-4 flex flex-wrap gap-2">
+            <li class="bg-[#e3ebdf] text-hijau text-xs font-medium px-2.5 py-1 rounded-full">C++</li>
+          </ul>
+          <img src="Minesweeperss.jpg" alt="Tampilan proyek MineSweeper" class="w-full h-44 mt-5 rounded-xl object-contain bg-[#eef2eb] border border-[#d5dfd0]">
+        </article>
+
+        <article class="group flex flex-col rounded-2xl bg-white border border-[#d5dfd0] p-5 hover:-translate-y-1 hover:shadow-lg hover:border-kuning transition">
+          <div class="h-1.5 w-12 rounded-full bg-kuning group-hover:w-20 transition-all"></div>
+          <h3 class="mt-4 font-heading font-semibold text-lg text-hijau">Smart To Do List</h3>
+          <p class="mt-2 text-sm text-samar flex-1">Mencatat tugas serta deadlinenya, user juga bisa menentukan urgensinya di app ini</p>
+          <ul class="mt-4 flex flex-wrap gap-2">
+            <li class="bg-[#e3ebdf] text-hijau text-xs font-medium px-2.5 py-1 rounded-full">C++</li>
+          </ul>
+          <img src="SmartToDoList.jpg" alt="Tampilan proyek Smart To Do List" class="w-full h-44 mt-5 rounded-xl object-contain bg-[#eef2eb] border border-[#d5dfd0]">
+        </article>
+
+        <article class="group flex flex-col rounded-2xl bg-white border border-[#d5dfd0] p-5 hover:-translate-y-1 hover:shadow-lg hover:border-kuning transition">
+          <div class="h-1.5 w-12 rounded-full bg-kuning group-hover:w-20 transition-all"></div>
+          <h3 class="mt-4 font-heading font-semibold text-lg text-hijau">Website Portofolio</h3>
+          <p class="mt-2 text-sm text-samar flex-1">Halaman portofolio responsif ini, dibuat dengan HTML dan Tailwind CSS.</p>
+          <ul class="mt-4 flex flex-wrap gap-2">
+            <li class="bg-[#e3ebdf] text-hijau text-xs font-medium px-2.5 py-1 rounded-full">HTML</li>
+            <li class="bg-[#e3ebdf] text-hijau text-xs font-medium px-2.5 py-1 rounded-full">Tailwind CSS</li>
+          </ul>
+          <img src="PPadid.jpg" alt="Tampilan website portofolio" class="w-full h-44 mt-5 rounded-xl object-contain bg-[#eef2eb] border border-[#d5dfd0]">
+        </article>
+
+      </div>
+    </section>
+
+    <section id="hobi" class="bg-kartu rounded-3xl p-7 sm:p-9 shadow-sm">
+      <h2 class="font-heading text-2xl font-semibold text-hijau mb-3 flex items-center gap-3"><span class="h-6 w-1.5 rounded-full bg-kuning"></span>Hobi Saya</h2>
+      <ul class="list-disc list-inside marker:text-kuning space-y-1.5 text-samar">
+        <li>Makan</li>
+        <li>Tidur</li>
+        <li>Main game</li>
+        <li>Ngoding santai</li>
+      </ul>
+    </section>
+
+    <section id="kontak" class="bg-hijau text-[#f3f6ef] rounded-3xl p-7 sm:p-9 shadow-md text-center sm:text-left">
+      <h2 class="font-heading text-2xl font-semibold mb-2 flex items-center justify-center sm:justify-start gap-3"><span class="h-6 w-1.5 rounded-full bg-kuning"></span>Kontak</h2>
+      <p class="opacity-90">Ingin berdiskusi atau berkolaborasi? Kirim email ke saya.</p>
+      <a href="mailto:adityanugraha@students.usu.ac.id" class="mt-5 inline-block rounded-full bg-kuning text-teks font-semibold px-6 py-2.5 shadow-md break-all hover:bg-white hover:-translate-y-0.5 transition">adityanugraha@students.usu.ac.id</a>
+    </section>
+
+  </main>
+
+  <footer class="bg-hijau-tua text-krem/80 text-sm">
+    <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 px-5 py-6">
+      <p>&copy; 2026 Aditya Nugraha. Semua hak dilindungi.</p>
+      <a href="#beranda" class="hover:text-kuning transition-colors">Kembali ke atas &uarr;</a>
+    </div>
+  </footer>
+
+</body>
+</html>
